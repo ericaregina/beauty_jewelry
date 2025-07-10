@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeautyJewelry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md p-5 flex justify-between items-center">
+
+        <div class="flex items-center gap-4">
+            <h1 class="text-xl font-bold italic">BeautyJewelry</h1>
+
+
+            <a href="https://wa.me/5599999999999" target="_blank" aria-label="WhatsApp"
+                class="text-black text-2xl hover:text-pink-500 transition-colors duration-200">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+
+            <a href="https://instagram.com/seuusuario" target="_blank" aria-label="Instagram"
+                class="text-black text-2xl hover:text-pink-500 transition-colors duration-200">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+
+        <a href="cart.html" class="text-sm font-medium ">Carrinho</a>
+    </header>
+
+
+
+
+    <main class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+        <div class="bg-white rounded-2xl shadow p-4 text-center">
+            <img src="anel_dourado.jpg" alt="Anel Dourado" class="w-full h-48 object-cover mx-auto rounded-xl mb-4">
+            <h2 class="font-semibold text-lg">Anel Dourado</h2>
+            <p class="text-sm text-gray-500 mb-2">Anel elegante banhado a ouro</p>
+            <p class="text-lg font-bold mb-2">R$ 199,90</p>
+            <button onclick="addToCart('Anel Dourado', 199.90)"
+                class="bg-black text-white px-4 py-2 rounded-full">Adicionar</button>
+        </div>
+
+
+        <div class="bg-white rounded-2xl shadow p-4 text-center">
+            <img src="colar_perola.jpg" alt="Colar Pérola" class="w-full h-48 object-cover mx-auto rounded-xl mb-4">
+            <h2 class="font-semibold text-lg">Colar de Pérola</h2>
+            <p class="text-sm text-gray-500 mb-2">Colar clássico com pérolas naturais</p>
+            <p class="text-lg font-bold mb-2">R$ 299,90</p>
+            <button onclick="addToCart('Colar de Pérola', 299.90)"
+                class="bg-black text-white px-4 py-2 rounded-full">Adicionar</button>
+        </div>
+
+
+        <div class="bg-white rounded-2xl shadow p-4 text-center">
+            <img src="brinco_prata.jpg" alt="Brinco de Prata" class="w-full h-48 object-cover mx-auto rounded-xl mb-4">
+            <h2 class="font-semibold text-lg">Brinco de Prata</h2>
+            <p class="text-sm text-gray-500 mb-2">Brincos finos em prata 925</p>
+            <p class="text-lg font-bold mb-2">R$ 149,90</p>
+            <button onclick="addToCart('Brinco de Prata', 149.90)"
+                class="bg-black text-white px-4 py-2 rounded-full">Adicionar</button>
+        </div>
+
+
+        <div class="bg-white rounded-2xl shadow p-4 text-center">
+            <img src="pulseira.jpg" alt="Pulseira Elegante" class="w-full h-48 object-cover mx-auto rounded-xl mb-4">
+            <h2 class="font-semibold text-lg">Pulseira Elegante</h2>
+            <p class="text-sm text-gray-500 mb-2">Pulseira ajustável com zircônias</p>
+            <p class="text-lg font-bold mb-2">R$ 179,90</p>
+            <button onclick="addToCart('Pulseira Elegante', 179.90)"
+                class="bg-black text-white px-4 py-2 rounded-full">Adicionar</button>
+        </div>
+
+
+        <div class="bg-white rounded-2xl shadow p-4 text-center">
+            <img src="relogio.jpg" alt="Relógio Feminino" class="w-full h-48 object-cover mx-auto rounded-xl mb-4">
+            <h2 class="font-semibold text-lg">Relógio Feminino</h2>
+            <p class="text-sm text-gray-500 mb-2">Design sofisticado com pulseira de couro</p>
+            <p class="text-lg font-bold mb-2">R$ 399,90</p>
+            <button onclick="addToCart('Relógio Feminino', 399.90)"
+                class="bg-black text-white px-4 py-2 rounded-full">Adicionar</button>
+        </div>
+
+
+        <div class="bg-white rounded-2xl shadow p-4 text-center">
+            <img src="colar_coracao.jpg" alt="Pingente Coração"
+                class="w-full h-48 object-cover mx-auto rounded-xl mb-4">
+            <h2 class="font-semibold text-lg">Pingente Coração</h2>
+            <p class="text-sm text-gray-500 mb-2">Pingente dourado em formato de coração</p>
+            <p class="text-lg font-bold mb-2">R$ 89,90</p>
+            <button onclick="addToCart('Pingente Coração', 89.90)"
+                class="bg-black text-white px-4 py-2 rounded-full">Adicionar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
